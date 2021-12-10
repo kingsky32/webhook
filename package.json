@@ -10,7 +10,8 @@
     "predev": "tsc",
     "dev": "nodemon --exec ts-node src/*",
     "prebuild": "tsc",
-    "build": "babel dist -d build"
+    "build": "babel dist -d build",
+    "start": "node build/app.js"
   },
   "dependencies": {
     "@types/morgan": "^1.9.3",
