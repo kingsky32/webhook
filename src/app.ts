@@ -7,7 +7,7 @@ const app: express.Application = express();
 
 app.use(logger('dev'));
 
-app.get('/', (req: express.Request, res: express.Response, next: express.NextFunction) => {
+app.post('/', (req: express.Request, res: express.Response, next: express.NextFunction) => {
   res.send('Done');
 });
 
