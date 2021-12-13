@@ -8,7 +8,7 @@ const app: express.Application = express();
 app.use(logger('dev'));
 
 app.post('/', (req: express.Request, res: express.Response, next: express.NextFunction) => {
-  console.log(JSON.stringify(req));
+  console.log(req);
   res.send('Done');
 });
 
