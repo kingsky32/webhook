@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.post('/', (req: express.Request, res: express.Response, next: express.NextFunction) => {
-  console.log(req.params);
+  console.log(JSON.parse(req.body.payload));
   res.send('Done');
 });
 
